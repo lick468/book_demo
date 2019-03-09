@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nenu.mapper.TbBookCommentMapper">
+  <resultMap id="BaseResultMap" type="com.nenu.domain.TbBookComment">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="bc_user_id" jdbcType="INTEGER" property="bcUserId" />
+    <result column="bc_content" jdbcType="VARCHAR" property="bcContent" />
+    <result column="bc_date" jdbcType="DATE" property="bcDate" />
+    <result column="bc_parentID" jdbcType="INTEGER" property="bcParentid" />
+    <result column="bc_agree" jdbcType="INTEGER" property="bcAgree" />
+  </resultMap>
+</mapper>

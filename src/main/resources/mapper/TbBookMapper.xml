@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nenu.mapper.TbBookMapper">
+  <resultMap id="BaseResultMap" type="com.nenu.domain.TbBook">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="b_name" jdbcType="VARCHAR" property="bName" />
+    <result column="b_author" jdbcType="VARCHAR" property="bAuthor" />
+    <result column="b_info" jdbcType="VARCHAR" property="bInfo" />
+    <result column="b_image" jdbcType="VARCHAR" property="bImage" />
+    <result column="b_wordcount" jdbcType="INTEGER" property="bWordcount" />
+    <result column="b_click" jdbcType="INTEGER" property="bClick" />
+    <result column="b_recommend" jdbcType="INTEGER" property="bRecommend" />
+    <result column="b_downlaod" jdbcType="VARCHAR" property="bDownlaod" />
+    <result column="b_state" jdbcType="INTEGER" property="bState" />
+  </resultMap>
+</mapper>

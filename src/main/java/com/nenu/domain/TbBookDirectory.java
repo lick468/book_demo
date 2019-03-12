@@ -1,10 +1,12 @@
 package com.nenu.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "tb_book_directory")
-public class TbBookDirectory {
+public class TbBookDirectory implements Serializable {
+    private static final long serialVersionUID = -3081565783273990449L;
     /**
      * 目录
      */

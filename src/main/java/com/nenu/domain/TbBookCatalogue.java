@@ -1,9 +1,11 @@
 package com.nenu.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "tb_book_catalogue")
-public class TbBookCatalogue {
+public class TbBookCatalogue implements Serializable {
+    private static final long serialVersionUID = -7323614668212789464L;
     /**
      * 书分类汇总ID
      */

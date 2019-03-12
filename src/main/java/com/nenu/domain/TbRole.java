@@ -1,9 +1,11 @@
 package com.nenu.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "tb_role")
-public class TbRole {
+public class TbRole implements Serializable {
+    private static final long serialVersionUID = 2963542521258121432L;
     /**
      * 权限ID
      */

@@ -29,8 +29,8 @@
             var icon = "<i class='fa fa-times-circle'></i> ";
             $("#signupForm").validate({
                 rules: {
-                    firstname: "required",
-                    lastname: "required",
+                    bName: "required",
+                    bInfo: "required",
                     username: {
                         required: true,
                         minlength: 2
@@ -55,8 +55,8 @@
                     agree: "required"
                 },
                 messages: {
-                    firstname: icon + "请输入你的姓",
-                    lastname: icon + "请输入您的名字",
+                    bName: icon + "请输入书名",
+                    bInfo: icon + "请输入简介",
                     username: {
                         required: icon + "请输入您的用户名",
                         minlength: icon + "用户名必须两个字符以上"

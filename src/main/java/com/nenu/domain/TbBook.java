@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 @Table(name = "tb_book")
 public class TbBook implements Serializable {
+
     private static final long serialVersionUID = 4405014096416445159L;
     /**
      * 书ID

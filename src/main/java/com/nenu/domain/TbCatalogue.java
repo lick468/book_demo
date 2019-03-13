@@ -5,10 +5,7 @@ import java.io.Serializable;
 
 @Table(name = "tb_catalogue")
 public class TbCatalogue implements Serializable {
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
     private static final long serialVersionUID = -3290302926742957996L;
     /**
      * 书分类ID

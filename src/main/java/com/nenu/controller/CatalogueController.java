@@ -1,6 +1,6 @@
 package com.nenu.controller;
 
-<<<<<<< HEAD
+
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.nenu.domain.TbCatalogue;
@@ -26,11 +26,12 @@ public class CatalogueController {
     @Autowired
     private TbCatalogueMapper tbCatalogueMapper;
 
-    @RequestMapping(value="/showCatalogueList",method = RequestMethod.GET)
+    @RequestMapping(value = "/showCatalogueList", method = RequestMethod.GET)
     public String showMain() {
         return "catalogueList";
     }
-    @RequestMapping(value="/getCatalogueData",method = RequestMethod.POST)
+
+    @RequestMapping(value = "/getCatalogueData", method = RequestMethod.POST)
     @ResponseBody
     public Map<String, Object> getCatalogueData(Integer pageSize, Integer offset) {
         Map<String, Object> map = new HashMap<String, Object>();
@@ -46,15 +47,4 @@ public class CatalogueController {
         return map;
     }
 
-=======
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-@Controller
-public class CatalogueController {
-    @RequestMapping(value = "index",method = RequestMethod.GET)
-    public String show() {
-        return "index";
-    }
->>>>>>> origin/master
 }

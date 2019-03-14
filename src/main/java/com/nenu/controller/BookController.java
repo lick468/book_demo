@@ -68,8 +68,6 @@ public class BookController {
         book.setbRecommend(0);
         tbBookMapper.insert(book);
 
-
-
         return "bookList";
     }
     @RequestMapping(value="/getBookData",method = RequestMethod.POST)

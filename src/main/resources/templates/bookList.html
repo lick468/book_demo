@@ -61,7 +61,7 @@
     </button>
 </div>
 
-
+<button class="btn-default" ><a  th:href="@{/bookDirectory/showAddBookChapter/{id}(id=3)}"> 添加章节</a>  </button>
 <table id="table" class="table table-hover"></table>
 
 
@@ -144,9 +144,10 @@
                 align: 'center',
                 valign: 'middle',
                 width: 160, // 定义列的宽度，单位为像素px
-                events : 'operateEvents',
+
                 formatter: function (value, row, index) {
-                    return '<button class="btn-primary"  title="Remove">删除</button>';
+                    console.log(value+"=="+row+"=="+index)
+                    return '<button class="btn-default" ><a  th:href="@{/bookDirectory/showAddBookChapter/{id}(id='+ value +')}"> 添加章节</a>  </button>';
                 }
 
             }
@@ -163,9 +164,6 @@
         }
 
     })
-
-
-
 
 
 
